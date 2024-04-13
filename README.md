@@ -40,10 +40,8 @@ app.get('/', asyncHandler(async (req, res, next) => {
 
 Without `express-async-handler`, you have to do try/catch like this on every function
 ```bash
-const asyncHandler = require('@sh/express-async-handler')
-
 app.get('/', asyncHandler(async (req, res, next) => {
-	try {
+  try {
     const users = await userRepository.findAll();
     res.json({ data: users })
   }
