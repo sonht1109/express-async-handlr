@@ -9,7 +9,7 @@ declare function asyncHandler<
   LocalsObj extends Record<string, any> = Record<string, any>
 >(
   fn: (
-    ...args: Array<RequestHandler<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
+    ...args: Parameters<RequestHandler<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
   ) => any | Promise<any>
 ): RequestHandler<P, ResBody, ReqBody, ReqQuery, LocalsObj>;
 
