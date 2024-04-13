@@ -1,6 +1,6 @@
 {
   "name": "express-async-handlr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Async handler for Express router. Both handle async error and centralize response",
   "main": "index.js",
   "scripts": {

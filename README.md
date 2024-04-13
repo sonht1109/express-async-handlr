@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-yarn add @sh/express-async-handler
+yarn add express-async-handlr
 ```
 
 ## Usage
@@ -28,9 +28,9 @@ app.use((req, res, next) => {
 });
 ```
 
-And then, import `express-async-handler` and wrap it onto every async function that needs handing
+And then, import `express-async-handlr` and wrap it onto every async function that needs handing
 ```bash
-const asyncHandler = require('@sh/express-async-handler')
+const asyncHandler = require('express-async-handlr')
 
 app.get('/', asyncHandler(async (req, res, next) => {
 	const users = await userRepository.findAll(); // errors will be automatically handled if any
@@ -38,7 +38,7 @@ app.get('/', asyncHandler(async (req, res, next) => {
 }))
 ```
 
-Without `express-async-handler`, you have to do try/catch like this on every function
+Without `express-async-handlr`, you have to do try/catch like this on every function
 ```bash
 app.get('/', asyncHandler(async (req, res, next) => {
   try {
