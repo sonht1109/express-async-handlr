@@ -22,7 +22,7 @@ describe("asyncHandler", () => {
       return 1;
     });
     await fn(null, res, next);
-    expect(next).not.toBeCalled();
+    expect(next).toBeCalled();
     expect(res.locals).toEqual({ data: 1 });
   });
 

@@ -8,6 +8,7 @@ const handler =
         if (res) {
           res.locals = Object.assign(res.locals || {}, { data });
         }
+        next();
       })
       .catch(next);
   };
