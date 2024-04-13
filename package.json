@@ -1,7 +1,7 @@
 {
   "name": "express-async-handlr",
-  "version": "0.0.1",
-  "description": "Async handler for Express router",
+  "version": "0.0.2",
+  "description": "Async handler for Express router. Both handle async error and centralize response",
   "main": "index.js",
   "scripts": {
     "test": "jest test.js"
@@ -14,7 +14,9 @@
     "express",
     "async",
     "async handler",
-    "handler"
+    "handler",
+    "error",
+    "response"
   ],
   "author": "sonht1109",
   "license": "ISC",
