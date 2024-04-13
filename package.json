@@ -1,26 +1,27 @@
 {
-  "name": "@sh/express-async-handler",
+  "name": "express-async-handlr",
   "version": "0.0.1",
-  "description": "Async handler for Express",
+  "description": "Async handler for Express router",
   "main": "index.js",
   "scripts": {
     "test": "jest test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sonht1109/express-async-handler.git"
+    "url": "git+https://github.com/sonht1109/express-async-handlr.git"
   },
   "keywords": [
     "express",
     "async",
-    "async handler"
+    "async handler",
+    "handler"
   ],
   "author": "sonht1109",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sonht1109/express-async-handler/issues"
+    "url": "https://github.com/sonht1109/express-async-handlr/issues"
   },
-  "homepage": "https://github.com/sonht1109/express-async-handler#readme",
+  "homepage": "https://github.com/sonht1109/express-async-handlr#readme",
   "peerDependencies": {},
   "devDependencies": {
     "@types/express": "^4.17.21",
