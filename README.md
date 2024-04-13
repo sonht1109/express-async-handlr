@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-yarn add express-async-handler
+yarn add @sh/express-async-handler
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ And then, import `express-async-handler` and wrap it onto every async function t
 const asyncHandler = require('@sh/express-async-handler')
 
 app.get('/', asyncHandler(async (req, res, next) => {
-	const users = await userRepository.findAll(); // errors will automatically handled if any
+	const users = await userRepository.findAll(); // errors will be automatically handled if any
 	return users;
 }))
 ```
