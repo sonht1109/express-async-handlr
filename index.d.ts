@@ -10,9 +10,7 @@ declare function asyncHandler<
 >(
   fn: (
     ...args: Array<RequestHandler<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
-  ) => void | Promise<void>
+  ) => any | Promise<any>
 ): RequestHandler<P, ResBody, ReqBody, ReqQuery, LocalsObj>;
-
-declare module asyncHandler {}
 
 export = asyncHandler;
