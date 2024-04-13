@@ -1,5 +1,5 @@
 {
-  "name": "express-async-handler",
+  "name": "@sh/express-async-handler",
   "version": "0.0.1",
   "description": "Async handler for ExpressJS routers",
   "main": "index.js",
