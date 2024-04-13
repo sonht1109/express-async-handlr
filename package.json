@@ -23,6 +23,8 @@
   "homepage": "https://github.com/sonht1109/express-async-handler#readme",
   "peerDependencies": {},
   "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-serve-static-core": "^4.19.0",
     "jest": "^29.7.0"
   }
 }
