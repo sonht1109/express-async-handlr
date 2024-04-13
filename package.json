@@ -1,7 +1,7 @@
 {
   "name": "@sh/express-async-handler",
   "version": "0.0.1",
-  "description": "Async handler for ExpressJS routers",
+  "description": "Async handler for Express",
   "main": "index.js",
   "scripts": {
     "test": "jest test.js"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/sonht1109/express-async-handler.git"
   },
   "keywords": [
-    "expressjs",
+    "express",
     "async",
     "async handler"
   ],
