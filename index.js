@@ -5,7 +5,9 @@ const handler =
     const next = args[args.length - 1];
     return Promise.resolve(fn(...args))
       .then((data) => {
-        res.locals.data = data;
+        if (res) {
+          res.locals = Object.assign(res.locals || {}, { data });
+        }
       })
       .catch(next);
   };

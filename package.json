@@ -4,39 +4,25 @@
   "description": "Async handler for ExpressJS routers",
   "main": "index.js",
   "scripts": {
-    "coverage": "nyc mocha index.test.js",
-    "report": "nyc report --reporter=html",
-    "test": "mocha index.test.js",
-    "lint": "eslint .",
-    "precommit": "npm run lint"
+    "test": "jest test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidbanham/express-async-errors.git"
+    "url": "git+https://github.com/sonht1109/express-async-handler.git"
   },
   "keywords": [
     "expressjs",
-    "async/await",
-    "async",
-    "await",
-    "es6",
     "async",
     "async handler"
   ],
   "author": "sonht1109",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/davidbanham/express-async-errors/issues"
+    "url": "https://github.com/sonht1109/express-async-handler/issues"
   },
-  "homepage": "https://github.com/davidbanham/express-async-errors#readme",
-  "peerDependencies": {
-    "express": "^4.16.2"
-  },
+  "homepage": "https://github.com/sonht1109/express-async-handler#readme",
+  "peerDependencies": {},
   "devDependencies": {
-    "express": "^4.16.2",
-    "jest": "^29.7.0",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0",
-    "supertest": "^3.0.0"
+    "jest": "^29.7.0"
   }
 }
