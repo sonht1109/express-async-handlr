@@ -4,13 +4,17 @@
 ```bash
 yarn add express-async-handlr
 ```
+or
+```bash
+npm i express-async-handlr
+```
 
 ## Usage
 This module can both handle async exception and returning data
 
 First, add these middlewares into your express application
 
-```bash
+```javascript
 import express from 'express';
 
 const app = express();
@@ -29,17 +33,17 @@ app.use((req, res, next) => {
 ```
 
 And then, import `express-async-handlr` and wrap it onto every async function that needs handing
-```bash
+```javascript
 const asyncHandler = require('express-async-handlr')
 
 app.get('/', asyncHandler(async (req, res, next) => {
-	const users = await userRepository.findAll(); // errors will be automatically handled if any
-	return users;
+  const users = await userRepository.findAll(); // errors will be automatically handled if any
+  return users;
 }))
 ```
 
 Without `express-async-handlr`, you have to do try/catch like this on every function
-```bash
+```javascript
 app.get('/', asyncHandler(async (req, res, next) => {
   try {
     const users = await userRepository.findAll();
